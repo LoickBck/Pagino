@@ -32,9 +32,9 @@ const BookCard = ({
               height={18}
               className="object-contain"
             />
-            <p className="text-light-100">11 days left to return</p>
+            <p className="text-light-100">Plus que 11 jours 😉</p>
           </div>
-          <Button className="book-btn">Download receipt</Button>
+          <Button className="book-btn">Télécharger le reçu</Button>
         </div>
       )}
     </Link>

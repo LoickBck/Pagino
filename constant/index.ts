@@ -71,10 +71,11 @@ export const sampleBooks = [
     videoUrl: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
       "Un roman éblouissant sur tous les choix qui façonnent une vie bien vécue, racontant l'histoire de Nora Seed entre la vie et la mort.",
+    isLoanedBook: true,
   },
   {
     id: 2,
-    title: "Atomic Habits",
+    title: "Un rien peut tout changer",
     author: "James Clear",
     genre: "Développement personnel / Productivité",
     rating: 4.9,
@@ -83,14 +84,14 @@ export const sampleBooks = [
     description:
       "Un guide révolutionnaire pour adopter de bonnes habitudes, briser les mauvaises et s'améliorer de 1 % chaque jour.",
     color: "#fffdf6",
-    cover: "https://m.media-amazon.com/images/I/81F90H7hnML.jpg",
+    cover: "https://m.media-amazon.com/images/I/71SE+Jrg0KL._SL1500_.jpg",
     videoUrl: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
       "Un guide révolutionnaire pour adopter de bonnes habitudes, briser les mauvaises et s'améliorer de 1 % chaque jour.",
   },
   {
     id: 3,
-    title: "Vous Ne Connaissez Pas JS : Scope & Closures",
+    title: "Scope & Closures",
     author: "Kyle Simpson",
     genre: "Informatique / JavaScript",
     rating: 4.7,
@@ -116,8 +117,7 @@ export const sampleBooks = [
     description:
       "Un conte magique de Santiago, un jeune berger andalou, qui part en quête d'un trésor terrestre.",
     color: "#ed6322",
-    cover:
-      "https://m.media-amazon.com/images/I/61HAE8zahLL._AC_UF1000,1000_QL80_.jpg",
+    cover: "https://m.media-amazon.com/images/I/61QTHD3+nSL._SL1241_.jpg",
     videoUrl: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
       "Un conte magique de Santiago, un jeune berger andalou, qui part en quête d'un trésor terrestre.",
@@ -133,7 +133,7 @@ export const sampleBooks = [
     description:
       "Des règles pour réussir dans un monde distrait, en apprenant à cultiver une concentration profonde pour atteindre une productivité maximale.",
     color: "#ffffff",
-    cover: "https://m.media-amazon.com/images/I/81JJ7fyyKyS.jpg",
+    cover: "https://m.media-amazon.com/images/I/61Vd7ljX3kL._SL1085_.jpg",
     videoUrl: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
       "Des règles pour réussir dans un monde distrait, en apprenant à cultiver une concentration profonde pour atteindre une productivité maximale.",
@@ -149,15 +149,14 @@ export const sampleBooks = [
     description:
       "Un manuel d'artisanat logiciel agile, offrant les meilleures pratiques et principes pour écrire un code propre et maintenable.",
     color: "#080c0d",
-    cover:
-      "https://m.media-amazon.com/images/I/71T7aD3EOTL._UF1000,1000_QL80_.jpg",
+    cover: "https://m.media-amazon.com/images/I/91rDX5YuLVL._SL1500_.jpg",
     videoUrl: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
       "Un manuel d'artisanat logiciel agile, offrant les meilleures pratiques et principes pour écrire un code propre et maintenable.",
   },
   {
     id: 7,
-    title: "Le Programmeur Pratique",
+    title: "Le Programmeur Pragmatique",
     author: "Andrew Hunt, David Thomas",
     genre: "Informatique / Programmation",
     rating: 4.8,
@@ -166,8 +165,7 @@ export const sampleBooks = [
     description:
       "Un guide intemporel pour les développeurs afin d'améliorer leurs compétences et leurs pratiques de programmation.",
     color: "#100f15",
-    cover:
-      "https://m.media-amazon.com/images/I/71VStSjZmpL._AC_UF1000,1000_QL80_.jpg",
+    cover: "https://m.media-amazon.com/images/I/81vlX+sY2BL._SL1232_.jpg",
     videoUrl: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
       "Un guide intemporel pour les développeurs afin d'améliorer leurs compétences et leurs pratiques de programmation.",
@@ -183,8 +181,7 @@ export const sampleBooks = [
     description:
       "Morgan Housel explore les comportements uniques et les mentalités qui façonnent la réussite financière et la prise de décision.",
     color: "#ffffff",
-    cover:
-      "https://m.media-amazon.com/images/I/81Dky+tD+pL._AC_UF1000,1000_QL80_.jpg",
+    cover: "https://m.media-amazon.com/images/I/71+LvE3vYKL._SL1500_.jpg",
     videoUrl: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
       "Morgan Housel explore les comportements uniques et les mentalités qui façonnent la réussite financière et la prise de décision.",
