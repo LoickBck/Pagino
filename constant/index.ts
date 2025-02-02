@@ -41,7 +41,7 @@ export const adminSideBarLinks = [
 ];
 
 export const FIELD_NAMES = {
-  fullname: "Nom complet",
+  fullName: "Nom complet",
   email: "E-mail",
   universityId: "Numéro d'identité universitaire",
   password: "Mot de passe",
@@ -49,7 +49,7 @@ export const FIELD_NAMES = {
 };
 
 export const FIELD_TYPES = {
-  fullname: "text",
+  fullName: "text",
   email: "email",
   universityId: "number",
   password: "password",
@@ -71,7 +71,6 @@ export const sampleBooks = [
     videoUrl: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
       "Un roman éblouissant sur tous les choix qui façonnent une vie bien vécue, racontant l'histoire de Nora Seed entre la vie et la mort.",
-    isLoanedBook: true,
   },
   {
     id: 2,
@@ -132,7 +131,7 @@ export const sampleBooks = [
     available_copies: 23,
     description:
       "Des règles pour réussir dans un monde distrait, en apprenant à cultiver une concentration profonde pour atteindre une productivité maximale.",
-    color: "#ffffff",
+    color: "#2CA9D0",
     cover: "https://m.media-amazon.com/images/I/61Vd7ljX3kL._SL1085_.jpg",
     videoUrl: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
@@ -148,7 +147,7 @@ export const sampleBooks = [
     available_copies: 56,
     description:
       "Un manuel d'artisanat logiciel agile, offrant les meilleures pratiques et principes pour écrire un code propre et maintenable.",
-    color: "#080c0d",
+    color: "#040A28",
     cover: "https://m.media-amazon.com/images/I/91rDX5YuLVL._SL1500_.jpg",
     videoUrl: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
@@ -164,7 +163,7 @@ export const sampleBooks = [
     available_copies: 3,
     description:
       "Un guide intemporel pour les développeurs afin d'améliorer leurs compétences et leurs pratiques de programmation.",
-    color: "#100f15",
+    color: "#3E3A47",
     cover: "https://m.media-amazon.com/images/I/81vlX+sY2BL._SL1232_.jpg",
     videoUrl: "/sample-video.mp4?updatedAt=1722593504152",
     summary:
