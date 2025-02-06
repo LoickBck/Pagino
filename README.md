@@ -18,6 +18,7 @@ Pagino est une application web qui permet d'emprunter des livres auprès d'écol
 - **Next.js 15** – Framework React pour le développement de l'application.
 - **TypeScript** – Pour bénéficier d'un typage statique et améliorer la qualité du code.
 - **Tailwind CSS** – Pour la mise en forme et le design de l'application.
+- **ShadCN** – Pour les composants réutilisables et personnalisables.
 - **Auth.js** – Pour la gestion de l'authentification.
 - **Drizzle + Neon** – ORM pour la gestion de la base de données.
 - **Upstash** – Pour la gestion du cache ou d'autres fonctionnalités liées à la base de données.
