@@ -8,26 +8,10 @@ import { auth } from "@/auth";
 
 const ibmPlexSans = localFont({
   src: [
-    {
-      path: require("./fonts/IBMPlexSans-Regular.ttf"),
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: require("./fonts/IBMPlexSans-Medium.ttf"),
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: require("./fonts/IBMPlexSans-Semibold.ttf"),
-      weight: "600",
-      style: "normal",
-    },
-    {
-      path: require("./fonts/IBMPlexSans-Bold.ttf"),
-      weight: "700",
-      style: "normal",
-    },
+    { path: "/fonts/IBMPlexSans-Regular.ttf", weight: "400", style: "normal" },
+    { path: "/fonts/IBMPlexSans-Medium.ttf", weight: "500", style: "normal" },
+    { path: "/fonts/IBMPlexSans-Semibold.ttf", weight: "600", style: "normal" },
+    { path: "/fonts/IBMPlexSans-Bold.ttf", weight: "700", style: "normal" },
   ],
 });
 
