@@ -2,10 +2,12 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { cn } from "@/lib/utils";
+import { cn, getInitials } from "@/lib/utils";
 import Image from "next/image";
+import { Session } from "next/auth";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-const Header = () => {
+const Header = ({ session }: { session: Session }) => {
   const pathname = usePathname();
 
   return (
@@ -16,13 +18,24 @@ const Header = () => {
       <ul className="flex flex-row items-center gap-8">
         <li>
           <Link
-            href="/library"
+            href="/bibliotheque"
             className={cn(
               "text-base cursor-pointer capitalize",
-              pathname === "/library" ? "text-light-200" : "text-light-100",
+              pathname === "/bibliotheque"
+                ? "text-light-200"
+                : "text-light-100",
             )}
           >
             Bibliothèque
+          </Link>
+        </li>
+        <li>
+          <Link href="/mon-profil">
+            <Avatar>
+              <AvatarFallback className="bg-amber-100">
+                {getInitials(session?.user?.name || "IN")}
+              </AvatarFallback>
+            </Avatar>
           </Link>
         </li>
       </ul>
