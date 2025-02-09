@@ -22,7 +22,7 @@ import {
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import { FIELD_NAMES, FIELD_TYPES } from "@/constant";
-import ImageUpload from "@/components/ImageUpload";
+import FileUpload from "@/components/FileUpload";
 import { useRouter } from "next/navigation";
 import { toast } from "@/hooks/use-toast";
 interface Props<T extends FieldValues> {
@@ -57,7 +57,7 @@ const AuthForm = <T extends FieldValues>({
       router.push("/");
     } else {
       toast({
-        title: `Erreur ${isSignIn ? "se connecter" : "s'enregistrer"}`,
+        title: `Erreur ${isSignIn ? "de connexion" : "d'enregistrement"}`,
         description: result.error ?? "Une erreur est survenue.",
         variant: "destructive",
       });
@@ -91,7 +91,14 @@ const AuthForm = <T extends FieldValues>({
                   </FormLabel>
                   <FormControl>
                     {field.name === "universityCard" ? (
-                      <ImageUpload onFileChange={field.onChange} />
+                      <FileUpload
+                        type="image"
+                        accept="image/*"
+                        placeholder="Télécharger votre carte étudiant"
+                        folder="ids"
+                        variant="dark"
+                        onFileChange={field.onChange}
+                      />
                     ) : (
                       <Input
                         required

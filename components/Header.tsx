@@ -1,15 +1,16 @@
 "use client";
-import React from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { cn, getInitials } from "@/lib/utils";
 import Image from "next/image";
+import { signOut } from "@/auth";
+import { Button } from "@/components/ui/button";
+import { cn, getInitials } from "@/lib/utils";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { usePathname } from "next/navigation";
 import { Session } from "next-auth";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { logoutAction } from "@/lib/actions/logout";
 
 const Header = ({ session }: { session: Session }) => {
   const pathname = usePathname();
-
   return (
     <header className="my-10 flex justify-between gap-5">
       <Link href="/">
@@ -38,8 +39,19 @@ const Header = ({ session }: { session: Session }) => {
             </Avatar>
           </Link>
         </li>
+        <form action={logoutAction}>
+          <Button type="submit">
+            <Image
+              src="/icons/logout.svg"
+              width={20}
+              height={20}
+              alt="Déconnexion"
+            />
+          </Button>
+        </form>
       </ul>
     </header>
   );
 };
+
 export default Header;
